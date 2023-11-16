@@ -1,0 +1,69 @@
+.AboutBG{
+    height: 90vh;
+    width: 100vw;
+    background-color: rgb(20, 20, 20);
+    display: flex;
+}
+
+.leftAbout{
+    height: 70vh;
+    width: 50%;
+    margin: 5rem;
+    /* background-color: yellow; */
+    color: #b8aaee;
+    padding: 20px;
+    overflow: hidden;
+}
+
+.rightAbout{
+    height: 70vh;
+    width: 50%;
+    margin-top: 5rem;
+    margin-left: 2rem;
+    margin-right: 2rem;
+    background-color: rgb(20, 20, 20);
+}
+
+.rightAbout h1{
+    text-align: center;
+    font-size: 3rem;
+    color: white;
+}
+
+.rightAbout .skillset{
+    height: 50vh;
+    margin-top: 2rem;
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.rightAbout .skillset img{
+    height: 80px;
+    width: 80px;
+    margin: 14px;
+}
+
+
+
+.profiles{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px;
+    padding-left: 60px;
+    background-color: rgb(20, 20, 20);  
+    color: white;
+}
+
+.profiles a img{
+    height: 36px;
+}
+
+.profiles a{
+    font-size: 30px;
+    color: white;
+    margin-left: 10px;
+}

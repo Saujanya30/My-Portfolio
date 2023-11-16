@@ -1,0 +1,63 @@
+.ProjectBG{
+    min-height: 100vh;
+    width: 100vw;
+    background-color: rgb(20, 20, 20);
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ProjectCard{
+    position: relative;
+    height: 400px;
+    width: 30%;
+    margin-top: 100px;
+    margin-left: 2rem;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0px 0px 4px white;
+}
+
+.ProjectCard:hover{
+    scale: 1.1;
+    transition: 0.6s;
+}
+.ProjectImage img{
+    height: 200px;
+    width: 100%;
+    border-radius: 10px;
+}
+
+.ProjectCard h2{
+    text-align: center;
+    margin-bottom: 4px;
+    /* text-shadow: 0px 0px 2px black; */
+}
+
+.ProjectDescription p{
+    font-size: 18px;
+    font-weight: lighter;
+    padding: 4px;
+}
+.ProjectButton{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+.ProjectButton button{
+    height: 30px;
+    width: 100%;
+    border: 2px solid black;
+    border-radius: 10px;
+    background-color: rgb(20, 20, 20);
+    color: white;
+    font-size: 18px;
+}
+.ProjectButton button a{
+    color: white;
+    text-decoration: none;
+}
+.ProjectButton button:hover{
+    background-color: purple;
+    cursor: pointer;
+    transition: 0.6s;
+}

@@ -1,0 +1,103 @@
+.AboutBackGround{
+    background-color: rgb(20, 20, 20);
+    display: flex;
+}
+
+.left_part{
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.wrapper{
+    display: inline-flex;
+}
+
+.wrapper .static-txt{
+    color: #fff;
+    font-size: 60px;
+    font-weight: 400;
+    margin-left: 20px;
+}
+
+.wrapper .dynamic-txts{
+    margin-left: 15px;
+    height: 90px;
+    line-height: 90px;
+    overflow: hidden;
+}
+
+.dynamic-txts li{
+    color: purple;
+    list-style: none;
+    font-size: 60px;
+    font-weight: 500;
+    position: relative;
+    top: 0;
+    animation: slide 6s steps(4) infinite;
+}
+
+@keyframes slide {
+    100%{
+        top: -360px;
+    }
+}
+
+.dynamic-txts li span{
+    position: relative;
+}
+
+.dynamic-txts li span::after{
+    content: "";
+    position: absolute;
+    left: 0;
+    height: 105%;
+    width: 100%;
+    background: rgb(20, 20, 20);     
+    border-left: 2px solid purple;
+    animation: typing 1.5s steps(12) infinite;
+}
+
+@keyframes typing {
+    100%{
+        left: 100%;
+        margin: 0 -35px 0 35px;
+    }
+}
+
+
+/* right part of about me starts here */
+.right_part{
+    height: 100vh;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right_part .myimage{
+    height: 50vh;
+    width: auto;
+    border-radius: 200px;
+    /* box-shadow: 0 0 20px purple; */
+    transition: all 1s;
+    animation: animateMyImg 2s infinite;
+}
+@keyframes animateMyImg {
+    0%{
+        box-shadow: 0 0 20px purple;
+    }
+    50%{
+        box-shadow: 0 0 28px purple;
+    }
+    100%{
+        box-shadow: 0 0 20px purple;
+    }
+}
+.right_part .myimage:hover{
+    cursor: pointer;
+    height: 54vh;
+}

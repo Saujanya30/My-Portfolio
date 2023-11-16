@@ -1,0 +1,32 @@
+/* .videoBG{
+    width: 100%;
+    height: 90vh;
+    /* background-color: goldenrod; 
+}
+video{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    /* opacity: 0.9; 
+} */
+
+.back-video{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    /* object-fit: cover; */
+}
+
+@media (min-aspect-ratio: 16/9){
+    .back-video{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-aspect-ratio: 16/9){
+    .back-video{
+        width: auto;
+        height: 100%;
+    }
+}
